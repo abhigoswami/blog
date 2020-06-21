@@ -20,7 +20,7 @@ jobs:
 
         # Generate the website
         - name: Publish
-          run: 
+          run: |
             cp wwwroot/index.html wwwroot/404.html
             dotnet publish myapp.csproj --configuration Release
 
